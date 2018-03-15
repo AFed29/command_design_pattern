@@ -1,6 +1,6 @@
-package AdvancedExample.SimpleExample.Commands;
+package AdvancedExample.Commands;
 
-import AdvancedExample.SimpleExample.Reciever.ISwitchable;
+import AdvancedExample.Reciever.ISwitchable;
 
 public class SwitchOffCommand implements ICommand {
     private ISwitchable switchable;

@@ -1,12 +1,12 @@
-package AdvancedExample.SimpleExample.Client;
+package AdvancedExample.Client;
 
-import AdvancedExample.SimpleExample.Commands.CoolCommand;
-import AdvancedExample.SimpleExample.Commands.HeatCommand;
-import AdvancedExample.SimpleExample.Commands.SwitchOffCommand;
-import AdvancedExample.SimpleExample.Commands.SwitchOnCommand;
-import AdvancedExample.SimpleExample.Invoker.Button;
-import AdvancedExample.SimpleExample.Reciever.AirConditioner;
-import AdvancedExample.SimpleExample.Reciever.Light;
+import AdvancedExample.Commands.CoolCommand;
+import AdvancedExample.Commands.HeatCommand;
+import AdvancedExample.Commands.SwitchOffCommand;
+import AdvancedExample.Commands.SwitchOnCommand;
+import AdvancedExample.Invoker.Button;
+import AdvancedExample.Reciever.AirConditioner;
+import AdvancedExample.Reciever.Light;
 
 public class Client {
 

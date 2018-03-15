@@ -1,6 +1,6 @@
-package AdvancedExample.SimpleExample.Commands;
+package AdvancedExample.Commands;
 
-import AdvancedExample.SimpleExample.Reciever.ITemperature;
+import AdvancedExample.Reciever.ITemperature;
 
 public class CoolCommand implements ICommand {
     ITemperature temperature;

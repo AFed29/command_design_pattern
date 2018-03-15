@@ -1,4 +1,4 @@
-package AdvancedExample.SimpleExample.Reciever;
+package AdvancedExample.Reciever;
 
 public interface ISwitchable {
     void switchOn();

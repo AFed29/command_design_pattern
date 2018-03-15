@@ -1,6 +1,6 @@
-package AdvancedExample.SimpleExample.Invoker;
+package AdvancedExample.Invoker;
 
-import AdvancedExample.SimpleExample.Commands.ICommand;
+import AdvancedExample.Commands.ICommand;
 
 public class Button {
 
