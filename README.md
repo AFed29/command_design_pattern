@@ -10,4 +10,5 @@ Example implementation of a command design pattern modelling a smarthome.
 
 ### Further Reading
 [Command Design Pattern](https://sourcemaking.com/design_patterns/command)
+
 [Java Example](https://dzone.com/articles/design-patterns-command)
