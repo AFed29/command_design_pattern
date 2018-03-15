@@ -6,18 +6,25 @@ import AdvancedExample.Commands.SwitchOffCommand;
 import AdvancedExample.Commands.SwitchOnCommand;
 import AdvancedExample.Invoker.Button;
 import AdvancedExample.Reciever.AirConditioner;
+import AdvancedExample.Reciever.Laptop;
 import AdvancedExample.Reciever.Light;
 
 public class Client {
 
     public static void main(String[] args) {
-        AirConditioner airConditioner = new AirConditioner();
         Light light = new Light();
+        AirConditioner airConditioner = new AirConditioner();
+        Laptop laptop = new Laptop("Jarrod's MacBook");
+
         Button button = new Button();
+
         SwitchOnCommand switchOnLightCommand = new SwitchOnCommand(light);
         SwitchOffCommand switchOffLightCommand = new SwitchOffCommand(light);
         SwitchOnCommand switchOnACCommand = new SwitchOnCommand(airConditioner);
         SwitchOffCommand switchOffACCommand = new SwitchOffCommand(airConditioner);
+        SwitchOnCommand switchOnLaptop = new SwitchOnCommand(laptop);
+        SwitchOffCommand switchOffLaptop = new SwitchOffCommand(laptop);
+
         HeatCommand heatCommand = new HeatCommand(airConditioner);
         CoolCommand coolCommand = new CoolCommand(airConditioner);
 
@@ -45,5 +52,13 @@ public class Client {
         button.setCommand(coolCommand);
         button.pressButton();
         System.out.println("The AC is now " + airConditioner.getTemperature());
+
+        button.setCommand(switchOnLaptop);
+        button.pressButton();
+        System.out.println("Is " + laptop.getName() + " on? " + laptop.getIsOn());
+
+        button.setCommand(switchOffLaptop);
+        button.pressButton();
+        System.out.println("Is " + laptop.getName() + " on? " + laptop.getIsOn());
     }
 }
